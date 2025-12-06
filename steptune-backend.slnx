@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/StepTune.Api/StepTune.Api.csproj" Id="1db1e9ad-cea8-46a5-a6de-71dd63e796c8" />
+    <Project Path="src/StepTune.Application/StepTune.Application.csproj" Id="f60d2f97-d4f5-4781-b4fc-3bbbc947228f" />
+    <Project Path="src/StepTune.Domain/StepTune.Domain.csproj" Id="46cfd946-5eea-4480-be93-f94195e9fa6f" />
+    <Project Path="src/StepTune.Infrastructure/StepTune.Infrastructure.csproj" Id="803bf98b-804e-49e4-9efd-72da264d850e" />
+  </Folder>
+  <Folder Name="/tests/" />
+</Solution>
