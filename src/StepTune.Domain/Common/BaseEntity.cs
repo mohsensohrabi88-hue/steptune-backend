@@ -4,7 +4,18 @@ using System.Text;
 
 namespace StepTune.Domain.Common
 {
-    public class BaseEntity
+    public abstract class BaseEntity
     {
+        public Guid Id { get; protected set; } = Guid.NewGuid();
+        private readonly List<DomainEvent> _domainEvents = new();
+        public IReadOnlyList<DomainEvent> DomainEvents => _domainEvents.AsReadOnly();
+        protected void AddDomainEvent(DomainEvent domainEvent)
+        {
+            _domainEvents.Add(domainEvent);
+        }
+        protected void ClearDomainEvent()
+        {
+            _domainEvents.Clear(); 
+        }
     }
 }
